@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Ubon Ratchathani tourism website.">
+    <title>ติดต่อเรา</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ติดต่อเรา</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contact-form">
+            <h2>กรุณากรอกข้อมูลของท่าน</h2>
+            <form action="submit_form.php" method="post" id="contactForm">
+                <label for="fullName">ชื่อ-นามสกุล:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">เบอร์โทรศัพท์ (ถ้ามี):</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">ข้อความ:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">ส่งข้อมูล</button>
+            </form>
+        </section>
+        <section id="about">
+            <p>ติดต่อ</p>
+            <p>Email: 66160153@go.buu.ac.th</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ITDI Research. All rights reserved.</p>
+    </footer>
+</body>
+</html>
