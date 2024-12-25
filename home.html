@@ -16,14 +16,18 @@
             <h1>แนะนำสถานที่ท่องเที่ยว อุบลราชธานี</h1>
             <nav>
                 <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
-            <ul id="nav-list">
-                <li><a href="info.html">Info</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+                <ul id="nav-list">
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
-        </div>  
+        </div>
     </header>
-    
+    <!-- เพิ่ม Search Box -->
+    <div class="search-box">
+        <input type="text" id="search" placeholder="ค้นหาสถานที่..." aria-label="Search">
+        <button type="button" onclick="searchFunction()">ค้นหา</button>
+    </div>
     <main>
         <section id="hero">
             <div class="hero-text">
@@ -48,14 +52,7 @@
         <p>&copy; 2024 ITDI Research. All rights reserved.</p>
     </footer>
 
-    <script>
-        // ฟังก์ชันในการเปิด/ปิดเมนู
-        function toggleMenu() {
-            const navList = document.getElementById('nav-list');
-            console.log('Toggling menu'); // ตรวจสอบว่าเรียกฟังก์ชันได้ถูกต้อง
-            navList.classList.toggle('nav-open');
-        }
-    </script>
-    
+    <script src="js/script.js"></script>
+
 </body>
 </html>
