@@ -8,17 +8,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <div class="container">
+            <div class="logo">
+                <img src="https://gdcatalog.go.th/assets/images/76province/UBN.png" alt="Product Image" class="h-12">  <!-- เปลี่ยนเป็นรูปภาพ -->
+            </div>    
             <h1>5 สถานที่ท่องเที่ยวอุบลราชธานี</h1>
             <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-list">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
             </nav>
-        </div>
+        </div>  
     </header>
+
     <main>
         <section id="hero">
             <div class="hero-text">
@@ -108,5 +114,15 @@
     <footer>
         <p>&copy; 2024 ITDI Research. All rights reserved.</p>
     </footer>
+
+    <script>
+        // ฟังก์ชันในการเปิด/ปิดเมนู
+        function toggleMenu() {
+            const navList = document.getElementById('nav-list');
+            console.log('Toggling menu'); // ตรวจสอบว่าเรียกฟังก์ชันได้ถูกต้อง
+            navList.classList.toggle('nav-open');
+        }
+    </script>
+
 </body>
 </html>

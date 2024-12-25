@@ -65,6 +65,44 @@ header .logo img {
     width: auto;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: none; /* ซ่อนเมนูปกติเมื่ออยู่ในขนาดหน้าจอเล็ก */
+        width: 100%;
+        flex-direction: column;
+        background-color: #4CAF50;
+        position: absolute;
+        top: 110px; /* ปรับตำแหน่งเมนู */
+        left: 0;
+        padding: 10px 0;
+    }
+
+    header nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    .hamburger-menu {
+        display: block; /* แสดงปุ่ม Hamburger */
+    }
+}
+
+/* เมื่อเมนูเปิดอยู่ */
+.nav-open {
+    display: flex;
+}
 
 /* Hero Section */
 #hero {
