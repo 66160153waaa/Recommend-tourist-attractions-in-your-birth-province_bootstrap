@@ -11,14 +11,26 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    align-items: center; /* จัดให้อยู่ในบรรทัดเดียวกัน */
+    justify-content: space-between; /* จัดระยะห่างระหว่างส่วนต่างๆ */
 }
 
 header {
     background: #4CAF50;
     color: white;
     padding: 15px 0;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* ใช้ flexbox เพื่อจัดแนว */
+    align-items: center; /* จัดให้อยู่ในแนวตั้งกลาง */
+    width: 100%;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: white;
+    margin: 0 20px;
+    flex-grow: 1; /* ช่วยให้ข้อความมีการขยายออกไป */
 }
 
 header nav ul {
@@ -26,7 +38,6 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
     gap: 15px;
 }
 
@@ -47,6 +58,13 @@ header nav ul li a {
 header nav ul li a:hover {
     background-color: #4CAF50;
 }
+
+/* Additional Styling for the Logo */
+header .logo img {
+    max-height: 64px; /* ปรับขนาดรูปภาพให้พอเหมาะ */
+    width: auto;
+}
+
 
 /* Hero Section */
 #hero {
