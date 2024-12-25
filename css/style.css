@@ -32,6 +32,7 @@ header h1 {
     color: white;
     margin: 0 20px;
     flex-grow: 1; /* ช่วยให้ข้อความมีการขยายออกไป */
+    align-items: center;
 }
 
 header nav ul {
@@ -199,6 +200,24 @@ header .logo img {
     background: #19311a;
 }
 
+
+.carousel-item {
+    height: 60vh; /* เปลี่ยนเป็น vh เพื่อให้ความสูงตามขนาดหน้าจอ */
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างไอเทมของ carousel */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(149, 255, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 #contact-form {
     background-color: white;
     padding: 30px;
@@ -244,7 +263,7 @@ header .logo img {
 /* About Section */
 #about {
     padding: 40px 20px;
-    background: #f9f9f9;
+    background: #333;
     text-align: center;
 }
 
@@ -255,7 +274,7 @@ header .logo img {
 
 #about p {
     font-size: 1.2em;
-    color: #555;
+    color: #ffffff;
 }
 
 /* Footer */
