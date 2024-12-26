@@ -202,18 +202,17 @@ header .logo img {
 
 
 .carousel-item {
-    height: 60vh; /* เปลี่ยนเป็น vh เพื่อให้ความสูงตามขนาดหน้าจอ */
-    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างไอเทมของ carousel */
+    height: 60vh;
 }
 
 .carousel-item img {
     object-fit: cover;
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
 .carousel-caption {
-    background: rgba(149, 255, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
