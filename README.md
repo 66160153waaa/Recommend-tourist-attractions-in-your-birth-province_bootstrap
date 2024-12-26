@@ -1,2 +1,26 @@
 # คำสั่งต่างๆ
 - git clone https://github.com/66160153waaa/Recommend-tourist-attractions-in-your-birth-province_bootstrap.git
+- git add .
+- git commit -m "first of all"
+- git add README.md
+- git commit -m "add order"
+- git push
+- git add .
+- git commit -m "edit header"
+- git add .
+- git commit -m "add hamburger menu"
+- git add .
+- git commit -m "add search box"
+- git add .
+- git commit -m "add Bootstrap Carousel"
+- git add .
+- git commit -m "add grid template"
+- git add .
+- git commit -m "add modal"
+- git add .
+- git commit -m "edit footer"
+- git add .
+- git commit -m "edit carousel"
+- git add .
+- git commit -m "Alredy"
+- git push
