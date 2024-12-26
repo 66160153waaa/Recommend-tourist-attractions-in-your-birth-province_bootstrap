@@ -6,6 +6,7 @@
     <meta name="description" content="Discover the beauty and culture of Ubon Ratchathani, Thailand. Explore tourist attractions and unique traditions.">
     <title>รายละเอียดสถานที่</title>
     <link rel="stylesheet" href="css/info.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
 </head>
 <body>
 
@@ -100,12 +101,49 @@
         </div>
     </main>
 
-    <footer>
-        <section id="about">
-            <h2>เกี่ยวกับเรา</h2>
-            <p>ติดต่อ</p>
-            <p>Email: 66160153@go.buu.ac.th</p>
-        </section>
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- เกี่ยวกับเรา -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">เกี่ยวกับเรา</h3>
+                    <p class="text-gray-400">
+                        เว็บไซต์รวบรวมสถานที่ท่องเที่ยวจังหวัดอุบลราชธานี
+                    </p>
+                </div>
+    
+                <!-- ลิงก์ด่วน -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">ลิงก์ด่วน</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="home.html" class="hover:text-white">หน้าแรก</a></li>
+                        <li><a href="info.html" class="hover:text-white">รายละเอียดสถานที่</a></li>
+                        <li><a href="contact.html" class="hover:text-white">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+    
+                <!-- ติดต่อ -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">ติดต่อ</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>อีเมล: 66160153@go.buu.ac.th</li>
+                        <li>โทร: (123) 456-7890</li>
+                    </ul>
+                </div>
+    
+                <!-- ติดตามเรา -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">ติดตามเรา</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
         <p>&copy; 2024 ITDI Research. All rights reserved.</p>
     </footer>
 
