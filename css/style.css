@@ -218,46 +218,133 @@ header .logo img {
     border-radius: 10px;
 }
 
-#contact-form {
-    background-color: white;
-    padding: 30px;
-    margin-top: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-#contact-form h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-}
-
-#contact-form input, #contact-form textarea {
+/* Modal Styles */
+.modal {
+    display: none; /* ซ่อน Modal เริ่มต้น */
+    position: fixed; /* ให้อยู่เหนือเนื้อหาทั้งหมด */
+    z-index: 1; /* ให้ Modal อยู่เหนือเนื้อหาทั้งหมด */
+    left: 0;
+    top: 0;
     width: 100%;
-    padding: 10px;
-    margin: 8px 0 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* สีพื้นหลังโปร่งใส */
 }
 
-#contact-form button {
+/* Modal Content */
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 60%; /* ขนาดของ Modal */
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+}
+
+/* Contact Form */
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50; /* เพิ่มสีขอบตอนโฟกัส */
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+/* ปรับปุ่มให้อยู่กึ่งกลาง */
+button {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 20%; /* ความกว้างของปุ่ม */
+    text-align: center;
+    display: block;
+    margin: 20px auto; /* เว้นระยะห่างจากด้านบนและด้านล่าง */
 }
 
-#contact-form button:hover {
+/* หากมีส่วนของ header หรือ footer */
+header, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* สำหรับเนื้อหาหลัก */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh; /* ทำให้เนื้อหาหลักมีความสูงอย่างน้อย 80% ของหน้าจอ */
+    padding: 0 20px; /* เพิ่มระยะห่างซ้ายและขวาของเนื้อหาหลัก */
+}
+
+
+
+button:hover {
     background-color: #19311a;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    button {
+        font-size: 1em;
+    }
 }
 
 /* About Section */
